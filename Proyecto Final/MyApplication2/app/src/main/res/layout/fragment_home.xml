@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="390dp"
+                android:layout_height="800dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TableRow
+                    android:id="@+id/row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname1"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice1"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut1"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut1"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut1"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname2"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice2"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut2"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut2"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut2"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname3"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice3"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut3"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut3"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut3"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname4"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice4"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut4"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut4"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut4"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname5"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice5"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut5"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut5"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut5"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname6"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice6"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut6"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut6"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut6"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img7"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname7"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice7"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut7"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut7"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut7"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img8"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname8"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice8"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut8"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant8"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut8"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut8"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img9"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname9"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice9"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut9"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant9"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut9"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut9"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img10"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname10"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice10"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut10"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant10"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut10"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut10"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row11"
+                    android:layout_width="375dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:layout_width="70dp"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/prodname11"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice11"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/minbut11"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant11"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/plusbut11"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/descbut11"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="#CFE1E5"
+                        android:gravity="center"
+                        android:text="Info"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cartbut"
+        android:layout_width="81dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#CFE1E5"
+        android:gravity="center"
+        android:text="Carrito"
+        android:textColor="#000000"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

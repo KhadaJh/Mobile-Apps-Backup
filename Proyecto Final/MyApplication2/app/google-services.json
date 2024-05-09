@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1000073592053",
+    "project_id": "fastpricer2",
+    "storage_bucket": "fastpricer2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000073592053:android:cbcb5c74ba3d83178ad9bc",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-X4AsLLdjNkupfREZ31vnb8CdY-5L-zI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

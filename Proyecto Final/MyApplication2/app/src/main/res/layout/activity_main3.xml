@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_lighter"
+    tools:context=".MainActivity3">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="78dp">
+
+            <TextView
+                android:id="@+id/subtotalstring"
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:gravity="right"
+                android:text="Subtotal:"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+
+            <TextView
+                android:id="@+id/subtotal"
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:text="$10"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="78dp">
+
+
+            <TextView
+                android:id="@+id/ivastring"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:gravity="right"
+                android:text="Iva:"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+
+            <TextView
+                android:id="@+id/iva"
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:text="$10"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="78dp">
+
+
+            <TextView
+                android:id="@+id/totaltext"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:gravity="right"
+                android:text="Total:"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:text="$10"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="390dp"
+                android:layout_height="800dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TableRow
+
+                    android:id="@+id/row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+                    <TextView
+                        android:id="@+id/prodname1"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice1"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant1"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits1"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:id="@+id/row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname2"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice2"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits2"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname3"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice3"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits3"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname4"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice4"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits4"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname5"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice5"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits5"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname6"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice6"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits6"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname7"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice7"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits7"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname8"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice8"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant8"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits8"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname9"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice9"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant9"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits9"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname10"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice10"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant10"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits10"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row11"
+                    android:layout_width="375dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="78dp">
+
+
+                    <TextView
+                        android:id="@+id/prodname11"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Nombre Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/prodprice11"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Precio Producto"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/cant11"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tpunits11"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/payb"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Pagar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/backb"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Regresar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
